@@ -27,8 +27,13 @@ class Torre:
         return -1
 
     def mostrarTorre(self):
-        print("\nEstado atual da torre:\n")
         for i in range(self.topo + 1):
-            print(self.Discos[i])
-        
+            print(self.Discos[i], end=" ")
+        print("\n")
+
+
+    def jogadorVenceu(self, n):
+        if self.topo == n - 1:
+            return True
+        return False
     
